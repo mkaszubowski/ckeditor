@@ -28,6 +28,7 @@ platforms :ruby do
     gem "carrierwave"
     gem "dragonfly"
     gem "mini_magick"
+    gem "rmagick"
   end
 
   group :mongoid do
