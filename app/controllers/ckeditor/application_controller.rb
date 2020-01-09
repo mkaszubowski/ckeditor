@@ -1,9 +1,9 @@
 class Ckeditor::ApplicationController < ApplicationController
   layout 'ckeditor/application'
 
-  before_filter :find_asset, :only => [:destroy]
-  before_filter :ckeditor_authorize!
-  before_filter :authorize_resource
+  before_action :find_asset, :only => [:destroy]
+  before_action :ckeditor_authorize!
+  before_action :authorize_resource
 
   protected
 
